@@ -1,0 +1,10 @@
+server:
+    servlet:
+        # 设置访问项目路径
+        context-path: /learning1
+    # 设置访问端口
+    port: 8091
+
+person:
+    name: 'Paul'
+    age: '20'
