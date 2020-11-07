@@ -1,0 +1,4 @@
+
+swagger:
+    base-package: com.paul.springboot2.web
+    base-path: /**
