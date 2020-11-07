@@ -12,6 +12,7 @@
         <module>spring-boot-1</module>
         <module>spring-boot-2</module>
         <module>spring-boot-3</module>
+        <module>spring-boot-3-1</module>
     </modules>
 
 </project>
