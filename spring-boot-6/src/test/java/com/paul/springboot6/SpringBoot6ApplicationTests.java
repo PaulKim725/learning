@@ -21,6 +21,8 @@ public class SpringBoot6ApplicationTests {
 
 	@Test
 	public void test(){
+		System.out.println(cacheManager.getClass());
+
 		userRepository.save(new User("Paul1", 21));
 
 		User p1 = userRepository.findByName("Paul1");
