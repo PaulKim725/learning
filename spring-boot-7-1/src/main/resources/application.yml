@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialization-mode: always
+        password: deve
+        url: jdbc:mysql://localhost:3309/test?useUnicode=true&characterEncoding=UTF-8
+        username: deve
+    jpa:
+        database: MySQL
+        generate-ddl: true
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+
+jwt:
+    tokenHeaderKey: Authorization #JWT存储的请求头
+    secret: paul725 #JWT加解密使用的密钥
+    expiration: 604800 #JWT的超期限时间(60*60*24*7)
+    tokenHead: 'Bearer ' #JWT负载中拿到开头
