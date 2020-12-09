@@ -23,6 +23,8 @@ public class CusLogoutSuccessHandler implements LogoutSuccessHandler {
 
     @Override
     public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("application/json");
         Map<String, Object> retMap = new HashMap<>();
         retMap.put("code", "000");
         retMap.put("message", "登出成功");

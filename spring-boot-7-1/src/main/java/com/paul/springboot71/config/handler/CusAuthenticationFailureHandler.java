@@ -24,6 +24,8 @@ public class CusAuthenticationFailureHandler implements AuthenticationFailureHan
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("application/json");
         if (e instanceof BadCredentialsException) {
             Map<String, Object> retMap = new HashMap<>();
             retMap.put("code", "001");

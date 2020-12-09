@@ -23,6 +23,8 @@ public class ReqAccessDeniedHandler implements AccessDeniedHandler {
 
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("application/json");
         Map<String, Object> retMap = new HashMap<>();
         retMap.put("code", "403");
         retMap.put("message", "没有相关权限");

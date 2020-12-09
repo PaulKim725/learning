@@ -24,5 +24,5 @@ public class User implements Serializable {
     private String password;
 
     @Column
-    private String enableFlag;
+    private String role;
 }

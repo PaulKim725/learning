@@ -1,6 +1,5 @@
 package com.paul.springboot71.dto;
 
-import com.paul.springboot71.vo.Role;
 import com.paul.springboot71.vo.User;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
@@ -18,8 +17,6 @@ import java.util.List;
 public class JwtUserDTO implements UserDetails {
 
     private User user;
-
-    private List<Role> roleList;
 
     private List<GrantedAuthority> authorities;
 
@@ -50,6 +47,6 @@ public class JwtUserDTO implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return "1".equals(user.getEnableFlag()) ? true : false;
+        return true;
     }
 }
