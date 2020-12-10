@@ -19,6 +19,7 @@
         <module>spring-boot-6-1</module>
         <module>spring-boot-7</module>
         <module>spring-boot-7-1</module>
+        <module>spring-boot-8</module>
     </modules>
 
 </project>
